@@ -2,15 +2,12 @@
     <head>
         <title>Es1 Training</title>
     </head>
-    <body>
+    <body id = "body1">
         <h1>Es1</h1>
         <p>Pagina html statica, includi un file javascript, 
             aggiungi un bottone, aggiungi un click listener al bottone che cambia il contenuto di un 
             tag span e il contenuto e colore di un div.
         </p>
-
-        <br><br>
-        <button id= "btn1">Non premere</button>
         <br><br>
         <span id= "span1">C'è un bottone</span>
         <div id= "div1" style= "background-color: rgb(41, 255, 87)">
@@ -19,23 +16,6 @@
             <p>ti ho detto di non premere il maledetto bottone</p>
         </div>
 
-        <script>
-            var span1 = document.getElementById("span1");
-            console.log("document: ", document);
-            console.log("span1 ", span1);
-            var testo = span1.innerHTML;
-            console.log("testo ", testo);
-            var button = document.getElementById("btn1");
-            button.addEventListener("click", function(){
-                console.log("BUONGIORNO");
-                document.getElementById("div1").setAttribute("style", "background-color: rgb(163, 36, 68)");
-                span1.innerHTML = "CUCU";
-                document.getElementById ("div1").innerHTML = "<h1> TI AVEVO DETTO DI NON CLICCARE!";
-            });
-
-            var changeColor = function(){
-                console.log("Buongiorno");
-            }
-        </script>
+        <script src = "es1.js"></script>
     </body>
 </html>

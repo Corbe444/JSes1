@@ -5,6 +5,8 @@ var addBtn = function(){
     btn.innerHTML = "NON CLICCARE";
 
     document.getElementById ("body1").append(btn);
+    btn.addEventListener("click", changeColor);
+
 }
 var changeColor =  function (){
     console.log("BUONGIORNO");
@@ -12,6 +14,6 @@ var changeColor =  function (){
     span1.innerHTML = "CUCU";
     document.getElementById ("div1").innerHTML = "<h1> TI AVEVO DETTO DI NON CLICCARE!";
 }
-//button.addEventListener("click", changeColor);
+
 
 document.addEventListener("DOMContentLoaded", addBtn);
